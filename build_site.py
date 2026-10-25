@@ -219,7 +219,7 @@ def index_page(increases):
     <li><strong>Lowest limit the law allows</strong> applies California Vehicle Code sections 22358.6, 22358.7 and 22358.8, and the California Manual on Uniform Traffic Control Devices (2026), section 2B.21, to each sheet. "No further finding" means the survey's own numbers already allow it. The other options depend on facts the survey doesn't record, and each lists what is needed. Business district limits (section 22358.9) were not assessed. Limits below 20 mph are not shown. This is a reading of the statutes, not legal advice.</li>
     <li><strong>Map lines</strong> are drawn on OpenStreetMap streets between the survey's cross streets. Map data © OpenStreetMap contributors; tiles by OpenFreeMap.</li>
   </ul>
-  <p class="sp-meta">Updated {e(long_date(CFG['updated']))}. Made by <a href="/about/">Max Mautner</a>. <a href="{e(issue)}">Report an error</a>.</p>
+  <p class="sp-meta">Updated {e(long_date(CFG['updated']))}. Made by <a href="/about/">Max Mautner</a>. <a href="{e(CFG['repo_url'])}">The data and code are public</a>, including the legal memo, so anyone can check how each number was reached. <a href="{e(issue)}">Report an error</a>.</p>
 </article>
 <script type="application/json" id="sp-data">{json.dumps(geojson(increases), separators=(",", ":"))}</script>
 """ + FOOT

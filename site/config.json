@@ -2,7 +2,7 @@
   "site_url": "https://maxmautner.com",
   "base": "/san-mateo-speeds/",
   "site_css": "/assets/css/site.css",
-  "repo_url": "",
+  "repo_url": "https://github.com/mmautner/san-mateo-speeds",
   "contact_email": "movesanmateo@gmail.com",
   "s3_bucket": "maxmautner.com",
   "cloudfront_distribution_id": "EXXGWO0M0CEXA",
