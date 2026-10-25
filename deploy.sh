@@ -37,6 +37,8 @@ DEST="s3://$BUCKET/$PREFIX/"
 
 echo "==> Building site"
 "$PY" build_site.py
+echo "==> Rendering preview images"
+pipeline/.venv/bin/python site/og/make_og.py
 
 echo "==> Staging (gzip text files, as the blog does; CloudFront does not compress)"
 STAGE=.deploy

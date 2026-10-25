@@ -22,6 +22,6 @@ The sheets do not report sample sizes.
 
 `build_site.py` writes the site to `dist/san-mateo-speeds/` from the files in `data/` and `site/`: an index with a map and sortable table of all 123 segments, one page per segment (legal options, street-type options, an "Ask the city" email, a share link), and a methodology page. `site/council.json` holds council members and the Public Works contact for the emails; update it when the council changes (December 2026). `pipeline/geometry.py` draws each segment on the OpenStreetMap street network (`data/sources/geo/`, © OpenStreetMap contributors, ODbL) and writes `data/segments_geo.json`.
 
-`./deploy.sh` builds and uploads to `s3://maxmautner.com/san-mateo-speeds/`, then invalidates that path on CloudFront. It never deletes anything. The blog's `s3_website.yml` must list `^san-mateo-speeds/` under `ignore_on_server`, or a blog deploy will delete this prefix.
+`./deploy.sh` builds, renders the 1200×630 preview images (`site/og/make_og.py`), and uploads to `s3://maxmautner.com/san-mateo-speeds/`, then invalidates that path on CloudFront. It never deletes anything. The blog's `s3_website.yml` must list `^san-mateo-speeds/` under `ignore_on_server`, or a blog deploy will delete this prefix.
 
 `data/sources/fhwa/` holds copies of the FHWA Proven Safety Countermeasures fact sheets (2021) and the Traffic Calming ePrimer Module 4 text used for the street-type options.

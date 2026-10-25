@@ -197,8 +197,9 @@ HEADER = """<header role="banner">
 <script>(function(){var t=document.getElementById('darkModeToggle'),r=document.documentElement;t.addEventListener('click',function(){var d=r.getAttribute('data-theme')!=='dark';r.setAttribute('data-theme',d?'dark':'light');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}});})();</script>"""
 
 
-def head(title, description, path, scripts=("map.js",)):
+def head(title, description, path, scripts=("map.js",), og="index"):
     page_url = f"{CFG['site_url']}{path}"
+    img = f"{CFG['site_url']}{BASE}og/{og}.png"  # rendered by site/og/make_og.py
     js = "\n".join(f'  <script defer src="{BASE}static/{s}?v={VER}"></script>' for s in scripts)
     return f"""<!DOCTYPE html>
 <html lang="en" data-base="{BASE}" data-version="{VER}">
@@ -214,6 +215,11 @@ def head(title, description, path, scripts=("map.js",)):
   <meta property="og:title" content="{e(title)}">
   <meta property="og:description" content="{e(description)}">
   <meta property="og:url" content="{e(page_url)}">
+  <meta property="og:image" content="{e(img)}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{e(description)}">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -393,7 +399,7 @@ def segment_page(n):
     mapdiv = (f'<div id="sp-map" class="sp-map sp-map-small" role="img" aria-label="Map of {e(segment_label(s))}"></div>'
               if has_map else '<p class="sp-meta">This segment could not be drawn on the map.</p>')
     over = s["p85"] - s["existing"]
-    return head(title, headline(s), path, scripts=("map.js", "page.js")) + f"""
+    return head(title, headline(s), path, scripts=("map.js", "page.js"), og=SLUGS[n]) + f"""
 <article class="sp sp-seg">
   <span class="sp-eyebrow"><a href="{BASE}">San Mateo speed survey, 2026</a> · <a href="{BASE}#list">All {len(SEGS)} streets</a></span>
   <h1>{e(segment_label(s))}</h1>
