@@ -17,3 +17,9 @@ The sheets do not report sample sizes.
 ## Legal options
 
 `pipeline/legal.py` computes, for each segment, the lowest limit state law allows using rounding alone (CVC 22358.6(c)) or reductions the survey itself documents (22358.6(b)), and lists further options (22358.7, 22358.8, 22358.9) with what each would need. Output: `data/legal_options.csv` / `.json`. The reasoning and citations are in `docs/legal-memo.md` (built from `docs/legal-memo-body.md` by `pipeline/memo_tables.py`).
+
+## Site
+
+`build_site.py` writes the page to `dist/san-mateo-speeds/` from the files in `data/`. `pipeline/geometry.py` draws each segment on the OpenStreetMap street network (`data/sources/geo/`, © OpenStreetMap contributors, ODbL) and writes `data/segments_geo.json`.
+
+`./deploy.sh` builds and uploads to `s3://maxmautner.com/san-mateo-speeds/`, then invalidates that path on CloudFront. It never deletes anything. The blog's `s3_website.yml` must list `^san-mateo-speeds/` under `ignore_on_server`, or a blog deploy will delete this prefix.

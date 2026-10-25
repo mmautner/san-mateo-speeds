@@ -2,3 +2,6 @@ build/
 pipeline/.venv/
 .DS_Store
 __pycache__/
+.deploy/
+.deploy-changed/
+dist/

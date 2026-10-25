@@ -1,5 +1,5 @@
 segment_no,street,from,to,survey_existing,survey_recommended,att3_existing,att3_recommended,oct5_ordinance_limit,note
-123,Airport Blvd,Lang Rd,Coyote Point Dr,35,40,40,40,40,"Survey sheet shows a 5 mph increase; Att 3 lists the existing limit as 40, and the Oct 5 ordinance (described as non-increases only) adopted 40."
-63,S Delaware St,Concar Dr,E 28th Ave,25,35,30,35,,"Existing limit differs. Increase deferred."
-122,Chess Dr,Bridgepointe Pkwy,City Limit,30,25,25,25,25,"Survey shows a decrease; Att 3 lists no change."
-72,N-S Bayshore Blvd/2nd Ave/Lindbergh St,Dore Ave,E 3rd Ave,30,30,35,30,30,"Survey shows no change; Att 3 lists a decrease from 35."
+123,Airport Blvd,Lang Rd,Coyote Point Dr,35,40,40,40,40,"The survey sheet lists the current limit as 35 and proposes 40. The city's summary for the Sept. 22 meeting lists the current limit as 40, and the ordinance adopted October 5, 2026, which covers only segments with no increase, sets 40."
+63,S Delaware St,Concar Dr,E 28th Ave,25,35,30,35,,"The survey sheet lists the current limit as 25. The city's summary for the Sept. 22 meeting lists 30."
+122,Chess Dr,Bridgepointe Pkwy,City Limit,30,25,25,25,25,"The survey sheet lists the current limit as 30 and proposes 25. The city's summary for the Sept. 22 meeting lists 25 as both the current and proposed limit."
+72,N-S Bayshore Blvd/2nd Ave/Lindbergh St,Dore Ave,E 3rd Ave,30,30,35,30,30,"The survey sheet lists the current limit as 30 with no change. The city's summary for the Sept. 22 meeting lists a decrease from 35 to 30."

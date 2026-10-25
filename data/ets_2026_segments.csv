@@ -59,7 +59,7 @@ segment_no,page,street,from,to,direction,length_mi,lanes,median,bike_lanes,exist
 58,59,N Delaware St,Peninsula Ave,E Poplar Ave,N-S,0.42,2,N,Y,25,30,29,33,23-32,2,82,16,2026-03-10,,8349,12,1.68,1.88
 59,60,N Delaware St,E Poplar Ave,Cypress Ave,N-S,0.52,2,N,Y,25,25,26,29,23-32,8,91,1,2026-03-10,2026-05-14,6084,27,1.68,4.68
 60,61,S Delaware St,Cypress Ave,E 5th Ave,N-S,0.35,2,N,N,25,25,27,32,23-32,5,84,11,2026-03-11,2026-05-05,10466,33,1.68,4.8
-61,62,S Delaware St,E 5th Ave,Birch Ave,N-S,0.0,2,N,N,25,30,30,34,25-34,8,83,9,2026-03-11,,3848,10,1.68,3.03
+61,62,S Delaware St,E 5th Ave,Birch Ave,N-S,0.47,2,N,N,25,30,30,34,25-34,8,83,9,2026-03-11,,3848,10,1.68,3.03
 62,63,S Delaware St,Birch Ave,Concar Dr,N-S,0.54,2,N,Y,25,30,30,35,26-35,12,77,11,2026-03-11,,8614,16,1.68,1.88
 63,64,S Delaware St,Concar Dr,E 28th Ave,N-S,0.86,4,N,Y,25,35,33,38,29-38,11,79,10,2026-07-17,,13084,25,0.96,1.22
 64,65,S Delaware St,E 28th Ave,Pacific Blvd,N-S,0.35,2,N,Y,25,25,25,27,19-28,4,90,6,2026-03-11,,7153,4,1.68,0.88
@@ -111,10 +111,10 @@ segment_no,page,street,from,to,direction,length_mi,lanes,median,bike_lanes,exist
 110,111,S Amphlett Blvd,E 5th Ave,Folkstone Ave,N-S,0.67,2,N,N,35,35,32,39,28-37,25,58,18,2026-05-21,2026-05-05,1255,4,1.68,2.61
 111,112,S B St,Baldwin Ave,9th Ave,N-S,0.52,2,N,Y,25,25,24,29,21-30,13,80,7,2026-04-10,,3367,20,1.68,6.26
 112,113,28th Ave,Alameda de las Pulgas,S El Camino Real,E-W,0.55,2,N,,25,25,23,26,18-27,3,92,5,2026-04-16,2026-04-29,4798,18,1.68,3.74
-113,114,Fernwood St,W Hillsdale Blvd,36th Ave,N-S,12.0,2,N,N,25,25,24,27,20-29,0,94,6,2026-04-17,2026-05-05,1635,0,1.68,0.0
+113,114,Fernwood St,W Hillsdale Blvd,36th Ave,N-S,0.12,2,N,N,25,25,24,27,20-29,0,94,6,2026-04-17,2026-05-05,1635,,1.68,0.0
 114,115,Clearview Way,W Hillsdale Blvd,City Limit,N-S,0.35,2,N,N,25,30,29,33,24-33,3,86,11,2026-07-15,2026-04-22,1351,1,1.68,1.16
-115,116,Parrott Dr,City Limit,De Anza Blvd,N-S,13.0,2,N,N,30,30,25,29,22-31,9,85,6,2026-04-14,2026-04-22,1447,0,1.68,0.0
-116,117,Camden Ave,42nd Ave,Mills Ave/city limit,N-S,11.0,2,Y,N,25,25,20,23,13-22,0,82,18,2026-04-23,2026-04-22,386,0,1.68,0.0
+115,116,Parrott Dr,City Limit,De Anza Blvd,N-S,0.13,2,N,N,30,30,25,29,22-31,9,85,6,2026-04-14,2026-04-22,1447,,1.68,0.0
+116,117,Camden Ave,42nd Ave,Mills Ave/city limit,N-S,0.11,2,Y,N,25,25,20,23,13-22,0,82,18,2026-04-23,2026-04-22,386,,1.68,0.0
 117,118,La Selva St,S Norfolk St,La Selva St,N-S,0.18,2,N,Y,25,25,26,31,23-32,11,86,3,2026-04-10,2026-05-19,6095,6,1.68,3.0
 118,119,W 25th Ave,Hacienda St,Delaware St,E-W,0.36,4,N,Y,25,25,25,29,21-30,1,95,4,2026-04-24,,5440,13,0.96,3.64
 119,120,31st Ave,W Hillsdale Blvd,Alameda de las Pulgas,E-W,0.85,2,N,N,25,25,26,29,21-30,0,94,6,2026-04-24,,2875,5,1.68,1.12

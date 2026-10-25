@@ -118,6 +118,7 @@ for o in out:
     p = o["page"]
     for k in ("street", "from", "to", "existing", "recommended", "p50", "p85", "survey_date", "adt", "collisions", "length_mi", "actual_rate"):
         if o[k] is None: probs.append((p, k, "missing"))
+    if o["length_mi"] is not None and not (0.05 <= o["length_mi"] <= 3): probs.append((p, "length", o["length_mi"]))
     if o["p50"] and o["p85"] and not (o["p50"] <= o["p85"]): probs.append((p, "p50>p85", o["p50"], o["p85"]))
     if None not in (o["pct_under"], o["pct_in"], o["pct_over"]):
         s = o["pct_under"] + o["pct_in"] + o["pct_over"]
@@ -146,7 +147,8 @@ MANUAL = {
     19: {"street": "Dartmouth/W 4th Ave", "from": "W 5th Ave"},
     **{p: {"collisions": 0} for p in (39, 43, 114, 116, 117)},
     **{p: {"length_mi": v} for p, v in {3: .85, 15: .25, 18: .54, 38: .62, 50: .53, 70: .6, 71: .48, 74: .22, 80: .17,
-                                         84: .48, 85: .35, 94: .6, 99: .43, 100: .65, 101: .35, 102: .44, 109: .72, 111: .67}.items()},
+                                         84: .48, 85: .35, 94: .6, 99: .43, 100: .65, 101: .35, 102: .44, 109: .72, 111: .67,
+                                         62: .47, 114: .12, 116: .13, 117: .11}.items()},
 }
 for o in out:
     o.update(MANUAL.get(o["page"], {}))

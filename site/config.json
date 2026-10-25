@@ -1,0 +1,16 @@
+{
+  "site_url": "https://maxmautner.com",
+  "base": "/san-mateo-speeds/",
+  "site_css": "/assets/css/site.css",
+  "repo_url": "",
+  "contact_email": "movesanmateo@gmail.com",
+  "s3_bucket": "maxmautner.com",
+  "cloudfront_distribution_id": "EXXGWO0M0CEXA",
+  "survey_pdf": "sources/ets_2026_summary_sheets_redacted.pdf",
+  "item16_url": "https://sanmateo.primegov.com/Portal/Meeting?meetingTemplateId=11223",
+  "oct5_url": "https://sanmateo.primegov.com/Portal/Meeting?meetingTemplateId=11233",
+  "att3_url": "https://sanmateo.primegov.com/api/compilemeetingattachmenthistory/historyattachment/?historyId=f4e2dbb5-f41f-4dbd-b41c-4741cf6d0da5",
+  "tefft_url": "https://aaafoundation.org/impact-speed-pedestrians-risk-severe-injury-death/",
+  "public_works_email": "",
+  "updated": "2026-10-25"
+}

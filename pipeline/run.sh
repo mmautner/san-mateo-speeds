@@ -10,3 +10,4 @@ $PY pipeline/parse.py build/ocr.json build/recs.json
 $PY pipeline/fix.py
 $PY pipeline/legal.py
 $PY pipeline/memo_tables.py
+$PY pipeline/geometry.py
