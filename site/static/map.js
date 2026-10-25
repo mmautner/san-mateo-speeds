@@ -1,9 +1,11 @@
-// Map of surveyed segments. The list on the page is the primary content; the map is an index into it.
+// Map of surveyed segments. The table and pages are the primary content; the map is an index into them.
 (function () {
   const el = document.getElementById("sp-map");
   const dataEl = document.getElementById("sp-data");
   if (!el || !dataEl) return;
   const data = JSON.parse(dataEl.textContent);
+  const single = dataEl.dataset.mode === "single";
+  if (!data.features.length) return;
 
   // The site's tokens are oklch(); MapLibre needs plain rgb.
   const px = document.createElement("canvas").getContext("2d", { willReadFrequently: true });
@@ -17,17 +19,6 @@
   };
   const styleUrl = () =>
     `https://tiles.openfreemap.org/styles/${document.documentElement.dataset.theme === "light" ? "positron" : "dark"}`;
-
-  function target(id) {
-    document.querySelectorAll(".sp-card.is-target").forEach((c) => c.classList.remove("is-target"));
-    const card = document.getElementById(id);
-    if (!card) return;
-    card.classList.add("is-target");
-    card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
-    card.focus({ preventScroll: true });
-  }
-  if (location.hash) target(location.hash.slice(1));
-  window.addEventListener("hashchange", () => target(location.hash.slice(1)));
 
   const bounds = () => {
     let w = 180, s = 90, e = -180, n = -90;
@@ -43,35 +34,40 @@
   document.head.append(css);
   const js = document.createElement("script");
   js.src = "https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.min.js";
-  js.onerror = () => { el.innerHTML = '<p class="sp-meta" style="padding:12px">The map didn\'t load. Every street is listed below.</p>'; };
+  js.onerror = () => { el.innerHTML = '<p class="sp-meta" style="padding:12px">The map didn\'t load. Every street is listed on this page.</p>'; };
   js.onload = () => {
     const m = new maplibregl.Map({
-      container: el, style: styleUrl(), bounds: bounds(), fitBoundsOptions: { padding: 30 },
+      container: el, style: styleUrl(), bounds: bounds(),
+      fitBoundsOptions: { padding: single ? 50 : 24, maxZoom: 15.5 },
       attributionControl: { compact: true }, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false,
     });
     if (new URLSearchParams(location.search).has("debug")) window.__spmap = m;
     m.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+
+    const lineColor = () => single ? cssColor("--line")
+      : ["match", ["get", "bin"], 0, cssColor("--b0"), 1, cssColor("--b1"), 2, cssColor("--b2"), cssColor("--b3")];
     const add = () => {
       m.addSource("segs", { type: "geojson", data });
-      m.addLayer({ id: "segs-halo", type: "line", source: "segs", layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": cssColor("--bg"), "line-width": 9 } });
-      m.addLayer({ id: "segs", type: "line", source: "segs", layout: { "line-cap": "round", "line-join": "round" },
-        paint: { "line-color": cssColor("--line"), "line-width": 5 } });
-      // wide invisible line so thin segments are easy to tap
-      m.addLayer({ id: "segs-hit", type: "line", source: "segs", paint: { "line-color": "#000", "line-opacity": 0, "line-width": 22 } });
+      const lay = { "line-cap": "round", "line-join": "round" };
+      m.addLayer({ id: "segs-halo", type: "line", source: "segs", layout: lay,
+        paint: { "line-color": cssColor("--bg"), "line-width": single ? 10 : ["interpolate", ["linear"], ["zoom"], 12, 5, 16, 10] } });
+      m.addLayer({ id: "segs", type: "line", source: "segs", layout: lay,
+        paint: { "line-color": lineColor(), "line-width": single ? 6 : ["interpolate", ["linear"], ["zoom"], 12, 3, 16, 7] } });
+      if (!single) // wide invisible line so thin segments are easy to tap
+        m.addLayer({ id: "segs-hit", type: "line", source: "segs", paint: { "line-color": "#000", "line-opacity": 0, "line-width": 20 } });
     };
     m.on("style.load", add);
-    const popup = new maplibregl.Popup({ closeButton: false, offset: 8 });
-    m.on("mousemove", "segs-hit", (ev) => {
-      m.getCanvas().style.cursor = "pointer";
-      const p = ev.features[0].properties;
-      popup.setLngLat(ev.lngLat).setText(`${p.label}: ${p.text}`).addTo(m);
-    });
-    m.on("mouseleave", "segs-hit", () => { m.getCanvas().style.cursor = ""; popup.remove(); });
-    m.on("click", "segs-hit", (ev) => {
-      const id = ev.features[0].properties.id;
-      if (location.hash === "#" + id) target(id); else location.hash = id;
-    });
+
+    if (!single) {
+      const popup = new maplibregl.Popup({ closeButton: false, offset: 8 });
+      m.on("mousemove", "segs-hit", (ev) => {
+        m.getCanvas().style.cursor = "pointer";
+        const p = ev.features[0].properties;
+        popup.setLngLat(ev.lngLat).setText(`${p.label}. ${p.text}`).addTo(m);
+      });
+      m.on("mouseleave", "segs-hit", () => { m.getCanvas().style.cursor = ""; popup.remove(); });
+      m.on("click", "segs-hit", (ev) => { location.href = ev.features[0].properties.url; });
+    }
     new MutationObserver(() => m.setStyle(styleUrl()))
       .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   };

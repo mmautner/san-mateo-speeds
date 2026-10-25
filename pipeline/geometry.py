@@ -43,6 +43,10 @@ BY_CORE = {}
 for w in WAYS:
     BY_CORE.setdefault(core(w["tags"]["name"]), []).append(w)
 
+_mw = json.load(open(GEO / "osm_motorways.json"))
+RAMPS = [pt for e in _mw["elements"] if e["type"] == "way" and e.get("tags", {}).get("highway", "").endswith("_link")
+         for pt in ([(g["lon"], g["lat"]) for g in e.get("geometry", [])])]
+
 city = json.load(open(GEO / "san_mateo_city.geojson"))
 geom = city["features"][0]["geometry"] if "features" in city else city.get("geometry", city)
 rings = geom["coordinates"] if geom["type"] == "Polygon" else [r for poly in geom["coordinates"] for r in poly]
@@ -58,7 +62,7 @@ def ways_for(name):
     return out
 
 
-def graph(ways):
+def graph(ways, bridge=0.03):
     g = {}
     for w in ways:
         for a, b in zip(w["nodes"], w["nodes"][1:]):
@@ -81,7 +85,7 @@ def graph(ways):
         for a, b in itertools.combinations(nodes, 2):
             if comp[a] != comp[b]:
                 d = hav(NODE[a], NODE[b])
-                if d < 0.03:
+                if d < bridge:
                     g[a][b] = g[b][a] = d
     return g
 
@@ -105,18 +109,24 @@ def endpoints(street_nodes, cross):
         return near + [n for n in street_nodes if len(G_CUR[n]) == 1], "city limit"  # or where the street ends
     m = re.match(r"(west|north|south|east) of (.+)", c)
     if m: cross = m.group(2)
-    if "off-ramp" in c or "wkwy" in c or "trail" in c or "crossing" in c:
+    if "off-ramp" in c:
+        near = [n for n in street_nodes if any(hav(NODE[n], r) < 0.02 for r in RAMPS)]
+        return (near or None), "ramp"
+    if "wkwy" in c or "trail" in c or "crossing" in c:
         return None, "unnamed"
     nodes = {n for w in ways_for(cross) for n in w["nodes"]}
     hit = [n for n in street_nodes if n in nodes]
     return hit, "intersection"
 
 
+G_WIDE = {}
+
+
 def locate(seg):
     sways = ways_for(seg["street"])
     if not sways: return {"status": "no street"}
     global G_CUR
-    g = G_CUR = graph(sways)
+    g = G_CUR = graph(sways, bridge=0.2 if seg.get("_retry") else 0.03)
     sn = set(g)
     a, ka = endpoints(sn, seg["from"])
     b, kb = endpoints(sn, seg["to"])
@@ -131,13 +141,19 @@ def locate(seg):
             if t in dist and t != s:
                 err = abs(dist[t] - target)
                 if best is None or err < best[0]: best = (err, s, t, dist[t], prev)
-    if not best: return {"status": "no path"}
+    if not best:
+        if not seg.get("_retry"):  # OSM splits some downtown blocks; bridge wider gaps along the same street
+            G_WIDE[seg["segment_no"]] = True
+            return locate(dict(seg, _retry=True))
+        return {"status": "no path"}
     err, s, t, d, prev = best
     path = [t]
     while path[-1] != s: path.append(prev[path[-1]])
     coords = [[round(NODE[n][0], 6), round(NODE[n][1], 6)] for n in reversed(path)]
     ok = target and abs(d - target) <= max(0.06, 0.2 * target) and ka != "unnamed" and kb != "unnamed"
-    return {"status": "ok" if ok else "check", "path_mi": round(d, 3), "survey_mi": target,
+    # an unnamed end (walkway, trail, ramp) located by length alone is fine if the length matches closely
+    if not ok and target and abs(d - target) <= max(0.03, 0.05 * target): ok = "approx"
+    return {"status": "ok" if ok is True else ("approx" if ok else "check"), "path_mi": round(d, 3), "survey_mi": target,
             "ends": [ka, kb], "coords": coords}
 
 
@@ -146,7 +162,8 @@ if __name__ == "__main__":
     out = {}
     for s in segs:
         out[s["segment_no"]] = r = locate(s)
-        if r["status"] != "ok":
+        if r["status"] not in ("ok", "approx"):
             print(s["segment_no"], s["street"], "|", s["from"], "->", s["to"], "|", r["status"], r.get("path_mi"), "vs", r.get("survey_mi"))
     json.dump(out, open(ROOT / "data/segments_geo.json", "w"))
-    print(sum(v["status"] == "ok" for v in out.values()), "of", len(out), "ok")
+    print(sum(v["status"] == "ok" for v in out.values()), "ok,", sum(v["status"] == "approx" for v in out.values()),
+          "approx (one end placed by survey length), of", len(out))
