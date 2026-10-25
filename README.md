@@ -1,6 +1,6 @@
 # San Mateo speeds
 
-How fast drivers actually go on San Mateo's surveyed streets, and what limits state law allows the city to set. Served at maxmautner.com/speeds/.
+How fast drivers actually go on San Mateo's surveyed streets, and what limits state law allows the city to set. Served at [maxmautner.com/san-mateo-speeds/](https://maxmautner.com/san-mateo-speeds/).
 
 ## Data
 
