@@ -429,7 +429,7 @@ def table_rows():
         low = legal(n)[0]
         over = s["p85"] - s["existing"]
         inc = s["recommended"] > s["existing"]
-        rows.append(f"""<tr data-inc="{int(inc)}">
+        rows.append(f"""<tr data-inc="{int(inc)}" id="s{n}">
   <th scope="row" data-v="{e(s['street'] + ' ' + s['from'])}"><a href="{url(n)}">{e(s['street'])}</a><span>{e(place(s['from']))} to {e(place(s['to']))}</span></th>
   <td data-v="{s['existing']}">{s['existing']}</td>
   <td data-v="{s['p50']}">{s['p50']}</td>

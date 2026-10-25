@@ -132,3 +132,4 @@ header nav a { font-size: 16px; color: var(--text-2); text-decoration: none; }
 
 .sp-foot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--hairline); font-size: 14px; color: var(--text-3); }
 .sp-foot p { margin: 0 0 8px; }
+.sp-table tbody tr:target { background: var(--surface-sunken); outline: 2px solid var(--accent); outline-offset: -2px; }
