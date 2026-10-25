@@ -13,3 +13,7 @@ The sheets do not report sample sizes.
 ### Rebuilding
 
 `pipeline/run.sh` renders the PDF, runs OCR (macOS Vision), parses each sheet, and applies a short list of hand corrections in `pipeline/fix.py`, each checked against the page image. Every row passes an arithmetic check: collisions ÷ (daily volume × 365 × 5 years × length) reproduces the sheet's printed collision rate.
+
+## Legal options
+
+`pipeline/legal.py` computes, for each segment, the lowest limit state law allows using rounding alone (CVC 22358.6(c)) or reductions the survey itself documents (22358.6(b)), and lists further options (22358.7, 22358.8, 22358.9) with what each would need. Output: `data/legal_options.csv` / `.json`. The reasoning and citations are in `docs/legal-memo.md` (built from `docs/legal-memo-body.md` by `pipeline/memo_tables.py`).

@@ -1,0 +1,3540 @@
+[
+ {
+  "segment_no": 1,
+  "street": "Peninsula Ave",
+  "from": "El Camino Real",
+  "to": "San Mateo Dr",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 2,
+  "street": "Peninsula Ave",
+  "from": "San Mateo Dr",
+  "to": "Airport Blvd",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 30,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 3,
+  "street": "Coyote Point Dr",
+  "from": "Airport Blvd",
+  "to": "SF Bay Trail",
+  "existing": 35,
+  "recommended": 25,
+  "p50": 19,
+  "p85": 25,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 4,
+  "street": "W Poplar Ave",
+  "from": "Occidental Ave",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 5,
+  "street": "E Poplar Ave",
+  "from": "El Camino Real",
+  "to": "N Claremont St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 28,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 6,
+  "street": "E Poplar Ave",
+  "from": "N Claremont St",
+  "to": "N Amphlett Blvd",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 7,
+  "street": "Baldwin Ave",
+  "from": "El Camino Real",
+  "to": "N B St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 28,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 8,
+  "street": "1st Ave",
+  "from": "S B St",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 20,
+  "p85": 24,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 9,
+  "street": "2nd Ave",
+  "from": "El Camino Real",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 20,
+  "p50": 19,
+  "p85": 22,
+  "nearest_step": 20,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 10,
+  "street": "2nd Ave",
+  "from": "Lindbergh St",
+  "to": "S Norfolk St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 11,
+  "street": "Crystal Springs Rd",
+  "from": "City Limit",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 12,
+  "street": "W 3rd Ave",
+  "from": "Crystal Springs Rd",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 13,
+  "street": "E 3rd Ave",
+  "from": "El Camino Real",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 21,
+  "p85": 24,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 14,
+  "street": "E 3rd Ave",
+  "from": "S Delaware St",
+  "to": "S Humboldt St",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 27,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 15,
+  "street": "J Hart Clinton Dr",
+  "from": "S Norfolk St",
+  "to": "Ryder Park Crossing",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 37,
+  "p85": 42,
+  "nearest_step": 40,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 40,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 16,
+  "street": "J Hart Clinton Dr",
+  "from": "Ryder Park Crossing",
+  "to": "City Limit",
+  "existing": 45,
+  "recommended": 50,
+  "p50": 49,
+  "p85": 54,
+  "nearest_step": 55,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 50,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 50,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 45,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 45,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 45
+ },
+ {
+  "segment_no": 17,
+  "street": "Parrot Dr",
+  "from": "Alameda de las Pulgas",
+  "to": "W 3rd Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 31,
+  "p85": 35,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist collision history (CVC 627(b)(2)); residential density (CVC 627(c)(1))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 18,
+  "street": "Dartmouth/W 4th Ave",
+  "from": "W 5th Ave",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 19,
+  "street": "E 4th Ave",
+  "from": "El Camino Real",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 20,
+  "p50": 20,
+  "p85": 23,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 20,
+  "street": "E 4th Ave",
+  "from": "S Delaware St",
+  "to": "S Idaho St",
+  "existing": 30,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 21,
+  "street": "W 5th Ave",
+  "from": "Parrot Dr",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 22,
+  "street": "E 5th Ave",
+  "from": "El Camino Real",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 23,
+  "street": "E 5th Ave",
+  "from": "S Delaware St",
+  "to": "S Amphlett Blvd",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 24,
+  "street": "9th Ave",
+  "from": "El Camino Real",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 25,
+  "street": "9th Ave",
+  "from": "S Delaware St",
+  "to": "S Amphlett Blvd",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); residential density (CVC 627(c)(1)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 26,
+  "street": "Newbridge Ave",
+  "from": "S Norfolk St",
+  "to": "J Hart Clinton Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 27,
+  "street": "Kehoe Ave",
+  "from": "Norton St",
+  "to": "S Norfolk St",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 28,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 28,
+  "street": "Kehoe Ave",
+  "from": "S Norfolk St",
+  "to": "Shoreview Ave",
+  "existing": 30,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 28,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 29,
+  "street": "Kehoe Ave",
+  "from": "Shoreview Ave",
+  "to": "Roberta Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 30,
+  "street": "Barneson Ave",
+  "from": "Alameda de las Pulgas",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 31,
+  "street": "Borel Ave",
+  "from": "Tilia St",
+  "to": "El Camino Real",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 32,
+  "street": "Bovet Rd/17th Ave",
+  "from": "Borel Ave",
+  "to": "Palm Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 33,
+  "street": "South Blvd",
+  "from": "Palm Ave",
+  "to": "S B St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 34,
+  "street": "Concar Dr",
+  "from": "Pacific Blvd",
+  "to": "S Grant St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 29,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 35,
+  "street": "19th Ave",
+  "from": "S Delaware St",
+  "to": "Fashion Island Blvd",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 36,
+  "street": "W 20th Ave/E 20th Ave",
+  "from": "Alameda de las Pulgas",
+  "to": "Palm Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 29,
+  "p85": 34,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 37,
+  "street": "Campus Dr",
+  "from": "W Hillsdale Blvd",
+  "to": "26th Ave Wkwy",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 38,
+  "street": "CSM Dr",
+  "from": "City Limit",
+  "to": "Perimeter Rd",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 39,
+  "street": "De Anza Blvd",
+  "from": "Polhemus Rd",
+  "to": "92 Off-Ramp",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 32,
+  "p85": 35,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 40,
+  "street": "De Anza Blvd",
+  "from": "92 Off-Ramp",
+  "to": "Cherrywood Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 41,
+  "street": "Glendora Dr",
+  "from": "Cherrywood Dr",
+  "to": "W Hillsdale Blvd",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 34,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 42,
+  "street": "Yates Way",
+  "from": "Saratoga Dr",
+  "to": "Wayne Way",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 25,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 43,
+  "street": "Park Pl",
+  "from": "Saratoga Dr",
+  "to": "Wayne Way",
+  "existing": 25,
+  "recommended": 20,
+  "p50": 19,
+  "p85": 22,
+  "nearest_step": 20,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 44,
+  "street": "W Hillsdale Blvd",
+  "from": "CSM Dr",
+  "to": "92 Off-Ramp",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 32,
+  "p85": 38,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 45,
+  "street": "W Hillsdale Blvd",
+  "from": "92 Off-Ramp",
+  "to": "31st Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 29,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 46,
+  "street": "W Hillsdale Blvd",
+  "from": "31st Ave",
+  "to": "Alameda de las Pulgas",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 28,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 47,
+  "street": "W Hillsdale Blvd",
+  "from": "Alameda de las Pulgas",
+  "to": "Edison St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 30,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 48,
+  "street": "E Hillsdale Blvd",
+  "from": "Edison St",
+  "to": "Saratoga Dr",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 33,
+  "p85": 38,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 49,
+  "street": "E Hillsdale Blvd",
+  "from": "Saratoga Dr",
+  "to": "City Limit",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 32,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 50,
+  "street": "36th Ave",
+  "from": "Fernwood St",
+  "to": "Hacienda St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 51,
+  "street": "37th Ave",
+  "from": "Hacienda St",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); residential density (CVC 627(c)(1))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 52,
+  "street": "W 39th Ave",
+  "from": "Edison St",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 53,
+  "street": "42nd Ave",
+  "from": "West of Bettina Ave",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 54,
+  "street": "N San Mateo Dr",
+  "from": "Peninsula Ave",
+  "to": "Grand Blvd",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 27,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 55,
+  "street": "N San Mateo Dr",
+  "from": "Grand Blvd",
+  "to": "Santa Inez Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 56,
+  "street": "S San Mateo Dr",
+  "from": "Santa Inez Ave",
+  "to": "Baldwin Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 57,
+  "street": "S San Mateo Dr",
+  "from": "Baldwin Ave",
+  "to": "E 5th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 20,
+  "p85": 24,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 58,
+  "street": "N Delaware St",
+  "from": "Peninsula Ave",
+  "to": "E Poplar Ave",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 59,
+  "street": "N Delaware St",
+  "from": "E Poplar Ave",
+  "to": "Cypress Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 60,
+  "street": "S Delaware St",
+  "from": "Cypress Ave",
+  "to": "E 5th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 61,
+  "street": "S Delaware St",
+  "from": "E 5th Ave",
+  "to": "Birch Ave",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 34,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 62,
+  "street": "S Delaware St",
+  "from": "Birch Ave",
+  "to": "Concar Dr",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 35,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 63,
+  "street": "S Delaware St",
+  "from": "Concar Dr",
+  "to": "E 28th Ave",
+  "existing": 25,
+  "recommended": 35,
+  "p50": 33,
+  "p85": 38,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 64,
+  "street": "S Delaware St",
+  "from": "E 28th Ave",
+  "to": "Pacific Blvd",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 65,
+  "street": "Pacific Blvd",
+  "from": "Concar Dr",
+  "to": "S Delaware St",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 66,
+  "street": "Pacific Blvd",
+  "from": "E Hillsdale Blvd",
+  "to": "City Limit",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 33,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac)"
+   },
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 67,
+  "street": "N Humboldt St",
+  "from": "Peninsula Ave",
+  "to": "E Poplar Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 29,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 68,
+  "street": "N Humboldt St",
+  "from": "E Poplar Ave",
+  "to": "Cypress Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 29,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 69,
+  "street": "S Humboldt St",
+  "from": "Cypress Ave",
+  "to": "9th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 70,
+  "street": "Occidental Ave",
+  "from": "Barroilhet Ave",
+  "to": "W Poplar Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "residential density (CVC 627(c)(1))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 71,
+  "street": "N Bayshore Blvd",
+  "from": "Coyote Pointe Dr",
+  "to": "Dore Ave",
+  "existing": 35,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 72,
+  "street": "N-S Bayshore Blvd/2nd Ave/Lindbergh St",
+  "from": "Dore Ave",
+  "to": "E 3rd Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 73,
+  "street": "N Kingston St",
+  "from": "Monte Diablo Ave",
+  "to": "Cypress Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 74,
+  "street": "S Norfolk St",
+  "from": "2nd Ave",
+  "to": "Newbridge Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 28,
+  "p85": 32,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 75,
+  "street": "S Norfolk St",
+  "from": "Newbridge Ave",
+  "to": "Lodi Ave",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 76,
+  "street": "S Norfolk St",
+  "from": "Lodi Ave",
+  "to": "Roberta Dr",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 77,
+  "street": "S Norfolk St",
+  "from": "Roberta Dr",
+  "to": "Day Ave",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 78,
+  "street": "S Norfolk St",
+  "from": "Day Ave",
+  "to": "La Selva St",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 34,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 79,
+  "street": "N Ellsworth Ave",
+  "from": "Tilton Ave",
+  "to": "Baldwin Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 80,
+  "street": "S Ellsworth Ave",
+  "from": "Baldwin Ave",
+  "to": "E 5th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 25,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 81,
+  "street": "N B St",
+  "from": "Tilton Ave",
+  "to": "Baldwin Ave",
+  "existing": 25,
+  "recommended": 20,
+  "p50": 18,
+  "p85": 22,
+  "nearest_step": 20,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 82,
+  "street": "S B St",
+  "from": "9th Ave",
+  "to": "South Blvd",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 35,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 83,
+  "street": "S Grant St",
+  "from": "10th Ave",
+  "to": "Haddon Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 84,
+  "street": "S Grant St",
+  "from": "Haddon Dr",
+  "to": "Concar Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac)"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 85,
+  "street": "S Grant St",
+  "from": "Concar Dr",
+  "to": "Ginnever St/Bermuda Dr",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist collision history (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 86,
+  "street": "Bermuda Dr",
+  "from": "S Delaware St",
+  "to": "Kent St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 27,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist collision history (CVC 627(b)(2)); residential density (CVC 627(c)(1)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 87,
+  "street": "Saratoga Dr",
+  "from": "S Delaware St",
+  "to": "E Hillsdale Blvd",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 36,
+  "p85": 39,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 88,
+  "street": "David St",
+  "from": "Wayne Way",
+  "to": "Park Pl",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 21,
+  "p85": 25,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 89,
+  "street": "Wayne Way",
+  "from": "Wayne Way",
+  "to": "Park Pl",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 20,
+  "p85": 24,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 90,
+  "street": "Roberta Dr",
+  "from": "Kehoe Ave",
+  "to": "S Norfolk St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "residential density (CVC 627(c)(1))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 91,
+  "street": "Mariners Island Blvd",
+  "from": "E 3rd Ave",
+  "to": "Armada Way",
+  "existing": 35,
+  "recommended": 40,
+  "p50": 39,
+  "p85": 43,
+  "nearest_step": 45,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 40,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 40,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 35,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 35,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 35
+ },
+ {
+  "segment_no": 92,
+  "street": "Mariners Island Blvd",
+  "from": "Armada Way",
+  "to": "City Limit",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 37,
+  "p85": 41,
+  "nearest_step": 40,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 40,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 93,
+  "street": "Alameda de las Pulgas",
+  "from": "Crystal Springs Rd",
+  "to": "Seville Way",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 32,
+  "p85": 36,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 94,
+  "street": "Alameda de las Pulgas",
+  "from": "Seville Way",
+  "to": "W 20th Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 35,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 95,
+  "street": "Alameda de las Pulgas",
+  "from": "W 20th Ave",
+  "to": "28th Ave",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 35,
+  "p85": 38,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 96,
+  "street": "Alameda de las Pulgas",
+  "from": "28th Ave",
+  "to": "36th Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 34,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 97,
+  "street": "Alameda de las Pulgas",
+  "from": "36th Ave",
+  "to": "City Limit",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 32,
+  "p85": 36,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 98,
+  "street": "Hacienda St",
+  "from": "22nd Ave",
+  "to": "28th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 99,
+  "street": "Hacienda St",
+  "from": "28th Ave",
+  "to": "37th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 100,
+  "street": "Edison St",
+  "from": "31st Ave",
+  "to": "36th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 101,
+  "street": "Edison St",
+  "from": "36th Ave",
+  "to": "42nd Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 22,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 102,
+  "street": "Palm Ave",
+  "from": "9th Ave",
+  "to": "E 17th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 28,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 103,
+  "street": "Palm Ave",
+  "from": "E 17th Ave",
+  "to": "E 20th Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 28,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 104,
+  "street": "Palm Ave",
+  "from": "E 20th Ave",
+  "to": "E 25th Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 27,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 105,
+  "street": "Curtiss St",
+  "from": "North of McLellan Ave",
+  "to": "E 39th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 30,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 106,
+  "street": "La Selva St",
+  "from": "La Selva St",
+  "to": "Los Prados St",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 32,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 107,
+  "street": "Los Prados Street",
+  "from": "La Selva St",
+  "to": "S Norfolk St",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 30,
+  "p85": 35,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 108,
+  "street": "N Amphlett Blvd",
+  "from": "N Humboldt St",
+  "to": "E Poplar Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 109,
+  "street": "N Amphlett Blvd",
+  "from": "E Poplar Ave",
+  "to": "2nd Ave",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 28,
+  "p85": 37,
+  "nearest_step": 35,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 110,
+  "street": "S Amphlett Blvd",
+  "from": "E 5th Ave",
+  "to": "Folkstone Ave",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 32,
+  "p85": 39,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 111,
+  "street": "S B St",
+  "from": "Baldwin Ave",
+  "to": "9th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 112,
+  "street": "28th Ave",
+  "from": "Alameda de las Pulgas",
+  "to": "S El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 26,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 113,
+  "street": "Fernwood St",
+  "from": "W Hillsdale Blvd",
+  "to": "36th Ave",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 24,
+  "p85": 27,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(a)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.6(b)",
+    "needs": "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac); the sheet already lists: pedestrian/bicyclist generator noted (CVC 627(c)(2))"
+   },
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 114,
+  "street": "Clearview Way",
+  "from": "W Hillsdale Blvd",
+  "to": "City Limit",
+  "existing": 25,
+  "recommended": 30,
+  "p50": 29,
+  "p85": 33,
+  "nearest_step": 35,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 30,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 25,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 25,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 25
+ },
+ {
+  "segment_no": 115,
+  "street": "Parrott Dr",
+  "from": "City Limit",
+  "to": "De Anza Blvd",
+  "existing": 30,
+  "recommended": 30,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 116,
+  "street": "Camden Ave",
+  "from": "42nd Ave",
+  "to": "Mills Ave/city limit",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 20,
+  "p85": 23,
+  "nearest_step": 25,
+  "survey_cites_b": false,
+  "survey_cites_c": false,
+  "rounding_limit": 20,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 20,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "",
+  "ped_generator_noted": false,
+  "possible": [],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 117,
+  "street": "La Selva St",
+  "from": "S Norfolk St",
+  "to": "La Selva St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 31,
+  "nearest_step": 30,
+  "survey_cites_b": true,
+  "survey_cites_c": false,
+  "rounding_limit": 30,
+  "rounding_basis": "22358.6(a)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(b)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2)); survey applied 22358.6(b)",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 118,
+  "street": "W 25th Ave",
+  "from": "Hacienda St",
+  "to": "Delaware St",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 25,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 119,
+  "street": "31st Ave",
+  "from": "W Hillsdale Blvd",
+  "to": "Alameda de las Pulgas",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 120,
+  "street": "31st Ave",
+  "from": "Alameda de las Pulgas",
+  "to": "El Camino Real",
+  "existing": 25,
+  "recommended": 25,
+  "p50": 23,
+  "p85": 28,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   },
+   {
+    "limit": 20,
+    "section": "22358.9",
+    "needs": "commercial/downtown zoning, retail or dining on at least half the frontage, signals or stop signs no more than 600 ft apart or uncontrolled marked crosswalks, and adjacent limits of 30 (for 25) or 25 (for 20)"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 121,
+  "street": "Fashion Island Blvd",
+  "from": "S Norfolk St",
+  "to": "Baker Wy",
+  "existing": 35,
+  "recommended": 35,
+  "p50": 35,
+  "p85": 39,
+  "nearest_step": 40,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 35,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 35,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 30,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   }
+  ],
+  "lowest_possible": 30
+ },
+ {
+  "segment_no": 122,
+  "street": "Chess Dr",
+  "from": "Bridgepointe Pkwy",
+  "to": "City Limit",
+  "existing": 30,
+  "recommended": 25,
+  "p50": 26,
+  "p85": 29,
+  "nearest_step": 30,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 25,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 25,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2)); pedestrian/bicyclist generator noted (CVC 627(c)(2))",
+  "ped_generator_noted": true,
+  "possible": [
+   {
+    "limit": 20,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au); the survey sheet already notes a generator"
+   }
+  ],
+  "lowest_possible": 20
+ },
+ {
+  "segment_no": 123,
+  "street": "Airport Blvd",
+  "from": "Lang Rd",
+  "to": "Coyote Point Dr",
+  "existing": 35,
+  "recommended": 40,
+  "p50": 39,
+  "p85": 43,
+  "nearest_step": 45,
+  "survey_cites_b": false,
+  "survey_cites_c": true,
+  "rounding_limit": 40,
+  "rounding_basis": "22358.6(c)",
+  "documented_limit": 40,
+  "documented_basis": "22358.6(c)",
+  "documented_reasons": "collision rate above statewide average (CVC 627(b)(2))",
+  "ped_generator_noted": false,
+  "possible": [
+   {
+    "limit": 35,
+    "section": "22358.7",
+    "needs": "a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft (Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious injuries over 3-5 years (paras 12at-12au)"
+   },
+   {
+    "limit": 35,
+    "section": "22358.8",
+    "needs": "city confirms the current limit was set by an engineering and traffic survey, and a registered engineer finds no general-purpose lanes added since"
+   }
+  ],
+  "lowest_possible": 35
+ }
+]

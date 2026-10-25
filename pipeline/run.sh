@@ -8,3 +8,5 @@ $PY pipeline/render.py
 $PY pipeline/ocr.py build/png build/ocr.json
 $PY pipeline/parse.py build/ocr.json build/recs.json
 $PY pipeline/fix.py
+$PY pipeline/legal.py
+$PY pipeline/memo_tables.py

@@ -40,6 +40,24 @@ def reocr(page, field):
         canvas.save(f.name)
         return " ".join(o["t"] for o in sorted(ocr(f.name), key=lambda o: o["x0"])).strip(" |[]")
 
+def reocr_box(page, top_pat, bottom_pat, x0, x1, scale=2):
+    """OCR a multi-line text box between two section labels; first-pass OCR drops lines here."""
+    obs = boxes[f"p{page:03d}"]
+    y0, y1 = label_y(obs, top_pat), label_y(obs, bottom_pat)
+    if y0 is None or y1 is None: return None
+    im = Image.open(BUILD / f"png/p{page:03d}.png")
+    W, H = im.size
+    c = im.crop((int(x0 * W), int((y0 + 0.012) * H), int(x1 * W), int((y1 - 0.010) * H)))
+    c = c.resize((c.width * scale, c.height * scale), Image.LANCZOS)
+    with tempfile.NamedTemporaryFile(suffix=".png", dir=BUILD) as f:
+        c.save(f.name)
+        res = ocr(f.name)
+    lines = []
+    for o in sorted(res, key=lambda o: o["y"]):
+        if lines and abs(o["y"] - lines[-1][0]) < 0.01: lines[-1][1].append(o)
+        else: lines.append((o["y"], [o]))
+    return " ".join(" ".join(t["t"] for t in sorted(l, key=lambda t: t["x0"])) for _, l in lines)
+
 def num(s, kind=float):
     if s is None: return None
     s = re.sub(r"^.*(:|NO\.I?)", "", s).replace(",", "")
@@ -118,6 +136,12 @@ print("re-OCR count:", len(log))
 print("problems:"); [print("  ", x) for x in probs]
 
 # --- manual corrections, each verified by eye against the page image ---
+for o in out:
+    p = o["page"]
+    o["factors"] = reocr_box(p, r"FACTORS CONSIDERED", r"^CERTIFICATION", 0.055, 0.405) or o["factors"]
+    o["recommendation_text"] = reocr_box(p, r"RECOMMENDATIONS", r"^CERTIFICATION", 0.405, 0.94) or o["recommendation_text"]
+    o["description"] = reocr_box(p, r"^DESCRIPTION", r"FACTORS CONSIDERED", 0.055, 0.94) or o["description"]
+
 MANUAL = {
     19: {"street": "Dartmouth/W 4th Ave", "from": "W 5th Ave"},
     **{p: {"collisions": 0} for p in (39, 43, 114, 116, 117)},
