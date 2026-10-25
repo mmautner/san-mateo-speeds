@@ -1,0 +1,4 @@
+pypdfium2
+pillow
+pyobjc-framework-Vision
+pyobjc-framework-Quartz
