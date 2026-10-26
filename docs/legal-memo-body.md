@@ -54,8 +54,12 @@ The legislature's own site blocks automated access, so these texts are from the 
 | Business activity district | 22358.9 | 25 or 20, enforceable without a survey | See (c) below | Partly: lanes and parking from the sheets; frontage, zoning and spacing need a check |
 
 The two ways to qualify for the extra 5 mph under 22358.7:
-- **(a) Safety corridor** (CA MUTCD ¶12ai–12ar). A designated corridor among the city's streets with the most deaths and serious injuries. Corridors may cover no more than one-fifth of the city's streets, and an engineer must sign off on the end points.
-- **(b) Walking and biking generator** (¶12at–12au). A generator from Table 2B-105(CA), such as a school, park, transit stop, retail or sidewalks, within 1,320 ft. The segment must also rank in the city's top 20% for pedestrian and bicyclist deaths and serious injuries over 3–5 years.
+- **(a) Safety corridor.**
+  - *Statute* (22358.7(a)(1)): the segment has been designated a safety corridor, and no more than one-fifth of the city's streets may be designated. The statute leaves the definition to Caltrans (22358.7(b)(1)).
+  - *CA MUTCD* (¶12ai–12ar): a safety corridor is a segment "where the highest number of serious injury and fatality crashes occur," for all modes, chosen with crash weighting factors, and an engineer must sign off on the end points. Together with the one-fifth cap, that makes safety corridors roughly the city's worst fifth of streets for deaths and serious injuries.
+- **(b) Walking and biking generator.**
+  - *Statute* (22358.7(a)(2)): the segment is adjacent to land or a facility that generates high concentrations of bicyclists or pedestrians. The statute leaves the definition to Caltrans (22358.7(b)(2)).
+  - *CA MUTCD* (¶12at–12au): there must be a generator from Table 2B-105(CA), such as a school, park, transit stop, retail or sidewalks, within 1,320 ft. The segment must also rank in the city's top 20% for pedestrian and bicyclist deaths and serious injuries over 3–5 years. This crash test comes from the manual, not from the statute.
 
 **(c) Business activity district criteria** (22358.9):
 - a downtown, urban village or commercial zoning,
@@ -86,7 +90,7 @@ Where the survey sheet and the city's Attachment 3 disagree on the posted limit,
 
 **What the "possibly lower" entries need:**
 - **22358.8 (keep current limit):** city records showing the current limit came from a survey. This matters most for the 25 mph streets. If a 25 limit is the state default rather than a survey result, 22358.8 doesn't apply.
-- **22358.7 (extra 5 mph):** a safety corridor designation, or a top-20% ranking for pedestrian and bicyclist deaths and serious injuries. The crash data in the san-mateo-crashes project could test the ranking.
+- **22358.7 (extra 5 mph):** a safety corridor designation (the manual's definition is the streets with the most deaths and serious injuries, all modes), or a generator nearby plus the manual's top-20% ranking for pedestrian and bicyclist deaths and serious injuries. The crash data in the san-mateo-crashes project could test both rankings.
 - **22358.9 (business district):** rows marked here are only candidates. They were flagged because the sheet mentions retail or commercial uses and parking. Zoning, frontage share and signal spacing still need checking.
 
 {{TABLES}}

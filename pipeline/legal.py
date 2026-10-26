@@ -72,10 +72,13 @@ def options(d):
         poss.append((max(n - 5, FLOOR), "22358.6(b)",
                      "the engineer documents written justification under CVC 627 (CA MUTCD 2B.21 para 12ac)"
                      + (f"; the sheet already lists: {'; '.join(reasons)}" if reasons else "")))
-    seven_needs = ("a city finding that the limit is still more than is reasonable or safe, plus either a safety corridor "
-                   "designation (CA MUTCD 2B.21 paras 12ai-12ar) or a generator of pedestrians or bicyclists within 1,320 ft "
-                   "(Table 2B-105(CA)) on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious "
-                   "injuries over 3-5 years (paras 12at-12au)")
+    seven_needs = ("a city finding that the limit is still more than is reasonable or safe, plus either (1) a safety "
+                   "corridor designation (CVC 22358.7(a)(1), at most one-fifth of the city's streets; CA MUTCD 2B.21 "
+                   "paras 12ai-12ar define it as the segments with the most fatal and serious injury crashes, all modes) "
+                   "or (2) adjacency to land that generates high concentrations of pedestrians or bicyclists "
+                   "(CVC 22358.7(a)(2)), which CA MUTCD 2B.21 paras 12at-12au define as a Table 2B-105(CA) generator "
+                   "within 1,320 ft on a segment in the city's top 20% for pedestrian/bicyclist deaths and serious "
+                   "injuries over 3-5 years; that crash test is in the manual, not the statute")
     if ped_gen:
         seven_needs += "; the survey sheet already notes a generator"
     poss.append((max(lim - 5, FLOOR), "22358.7", seven_needs))

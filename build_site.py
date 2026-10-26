@@ -128,9 +128,12 @@ NEEDS = {
                 "The city must confirm the current limit was itself set by an engineering and traffic survey, and a "
                 "registered engineer must find that no traffic lanes have been added since."),
     "22358.7": ("with an additional 5 mph reduction",
-                "The city must find the limit is still more than is reasonable or safe, and either designate the "
-                "street a safety corridor or show that it ranks in the city's worst fifth for people walking or "
-                "biking killed or seriously injured and is near a school, park, transit stop or similar place."),
+                "The city must find the limit is still more than is reasonable or safe, and the street must qualify "
+                "one of two ways. The law allows it on a designated safety corridor; the state's traffic manual "
+                "defines these as the streets with the most deaths and serious injuries, and the law caps them at a "
+                "fifth of city streets. The law also allows it next to places that draw many people walking or "
+                "biking, such as a school, park or transit stop; the manual adds that the street must rank in the "
+                "city's worst fifth for people walking or biking killed or seriously injured over 3 to 5 years."),
 }
 
 
@@ -372,7 +375,7 @@ def ask(n):
     greet = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1]
     low, how, sec, _ = legal(n)
     cond = {"22358.8": ", by keeping the current limit, if that limit was set by an earlier survey and no lanes have been added",
-            "22358.7": ", with an additional 5 mph reduction, if the city designates it a safety corridor or its crash history qualifies"
+            "22358.7": ", with an additional 5 mph reduction, if it qualifies as a safety corridor or as a street near places that draw many people walking or biking"
             }.get(sec, "")
     body = (f"Dear {greet},\n\n"
             f"The city's 2026 speed survey measured traffic on {s['street']} between {place(s['from'])} and {place(s['to'])} "
