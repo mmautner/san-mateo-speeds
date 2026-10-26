@@ -25,21 +25,3 @@ The sheets do not report sample sizes.
 `./deploy.sh` builds, renders the 1200×630 preview images (`site/og/make_og.py`), and uploads to `s3://maxmautner.com/san-mateo-speeds/`, then invalidates that path on CloudFront. It never deletes anything. The blog's `s3_website.yml` must list `^san-mateo-speeds/` under `ignore_on_server`, or a blog deploy will delete this prefix.
 
 `data/sources/fhwa/` holds copies of the FHWA Proven Safety Countermeasures fact sheets (2021) and the Traffic Calming ePrimer Module 4 text used for the street-type options.
-
-## Analytics
-
-Pages use the same Google Analytics 4 property as maxmautner.com (`google_analytics_key` in `site/config.json`). `site/static/analytics.js` sends these events, all prefixed `speeds_` and all carrying `segment` (the street page's slug; empty on the index):
-
-| Event | When | Extra parameters |
-|---|---|---|
-| `speeds_ask_email_clicked` | "Write the email" on a street page | `districts`, `proposal` (increase / decrease / no_change) |
-| `speeds_email_text_copied` | "Copy the text" | `copied` (yes / no) |
-| `speeds_link_copied` | "Copy link" | `copied` |
-| `speeds_survey_pdf_opened` | a link to the survey PDF | `pdf_page` (or `all`) |
-| `speeds_map_segment_clicked` | a line tapped on the index map | `target_segment` |
-| `speeds_table_segment_clicked` | a street link in the index table | `target_segment` |
-| `speeds_table_sorted` | a column heading | `column`, `direction` |
-| `speeds_table_filtered` | "All" / "Proposed increases" | `filter` |
-| `speeds_outbound_clicked` | any link off maxmautner.com | `link_url`, `link_text` |
-
-To report on a parameter in GA4, register it as an event-scoped custom dimension (Admin → Custom definitions).
