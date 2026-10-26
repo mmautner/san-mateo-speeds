@@ -197,6 +197,19 @@ HEADER = """<header role="banner">
 <script>(function(){var t=document.getElementById('darkModeToggle'),r=document.documentElement;t.addEventListener('click',function(){var d=r.getAttribute('data-theme')!=='dark';r.setAttribute('data-theme',d?'dark':'light');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}});})();</script>"""
 
 
+def analytics():
+    """The same Google Analytics tag as maxmautner.com (_includes/analytics.html in the blog)."""
+    key = CFG.get("google_analytics_key")
+    if not key: return ""
+    return f"""<script async src="https://www.googletagmanager.com/gtag/js?id={key}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{key}');
+  </script>"""
+
+
 def head(title, description, path, scripts=("map.js",), og="index"):
     page_url = f"{CFG['site_url']}{path}"
     img = f"{CFG['site_url']}{BASE}og/{og}.png"  # rendered by site/og/make_og.py
@@ -220,6 +233,7 @@ def head(title, description, path, scripts=("map.js",), og="index"):
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{e(description)}">
   <meta name="twitter:card" content="summary_large_image">
+  {analytics()}
   <link rel="icon" href="/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
