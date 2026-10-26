@@ -66,7 +66,12 @@
         popup.setLngLat(ev.lngLat).setText(`${p.label}. ${p.text}`).addTo(m);
       });
       m.on("mouseleave", "segs-hit", () => { m.getCanvas().style.cursor = ""; popup.remove(); });
-      m.on("click", "segs-hit", (ev) => { location.href = ev.features[0].properties.url; });
+      m.on("click", "segs-hit", (ev) => {
+        const url = ev.features[0].properties.url;
+        if (window.spTrack) window.spTrack("map_segment_clicked", {
+          target_segment: url.split("/").filter(Boolean).pop() });
+        location.href = url;
+      });
     }
     new MutationObserver(() => m.setStyle(styleUrl()))
       .observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

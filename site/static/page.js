@@ -15,6 +15,7 @@
         t.remove();
       }
       if (status) status.textContent = ok ? "Copied." : "Couldn't copy. Select the text and copy it.";
+      if (window.spTrack && btn.dataset.copyEvent) window.spTrack(btn.dataset.copyEvent, { copied: ok ? "yes" : "no" });
     });
   }
 })();

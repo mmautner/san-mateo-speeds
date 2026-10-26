@@ -24,6 +24,7 @@
         return sign * c || a.cells[0].dataset.v.localeCompare(b.cells[0].dataset.v);
       });
       body.append(...rows);
+      if (window.spTrack) window.spTrack("table_sorted", { column: btn.textContent.trim(), direction: dir });
     });
   });
 
@@ -32,5 +33,6 @@
     filters.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     const only = b.dataset.filter === "inc";
     for (const r of body.rows) r.hidden = only && r.dataset.inc !== "1";
+    if (window.spTrack) window.spTrack("table_filtered", { filter: b.dataset.filter });
   }));
 })();

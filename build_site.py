@@ -118,6 +118,10 @@ def proposal(s):
     return f"keeping the limit at {s['recommended']} mph"
 
 
+def proposal_kind(s):
+    return "increase" if s["recommended"] > s["existing"] else ("decrease" if s["recommended"] < s["existing"] else "no_change")
+
+
 # ------------------------------------------------------------------ legal options
 NEEDS = {
     "22358.8": ("by keeping the current limit",
@@ -210,12 +214,13 @@ def analytics():
   </script>"""
 
 
-def head(title, description, path, scripts=("map.js",), og="index"):
+def head(title, description, path, scripts=("map.js",), og="index", segment=""):
     page_url = f"{CFG['site_url']}{path}"
+    scripts = ("analytics.js", *scripts)
     img = f"{CFG['site_url']}{BASE}og/{og}.png"  # rendered by site/og/make_og.py
     js = "\n".join(f'  <script defer src="{BASE}static/{s}?v={VER}"></script>' for s in scripts)
     return f"""<!DOCTYPE html>
-<html lang="en" data-base="{BASE}" data-version="{VER}">
+<html lang="en" data-base="{BASE}" data-version="{VER}" data-segment="{e(segment)}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -386,7 +391,7 @@ def ask(n):
   <p>This opens an email to {e(who)}, with this street's numbers filled in. There's a blank line for a sentence of your own.</p>
   <p class="sp-meta">To: {e(", ".join(to))}<br>Subject: {e(subject)}</p>
   <pre class="sp-email">{preview}</pre>
-  <p class="sp-actions"><a class="sp-btn" href="{e(href)}">Write the email</a> <button type="button" class="sp-btn sp-btn-2" data-copy="sp-email-text">Copy the text</button> <span class="sp-copied" role="status"></span></p>
+  <p class="sp-actions"><a class="sp-btn" href="{e(href)}" data-track="ask_email_clicked" data-track-districts="{e(",".join(ds))}" data-track-proposal="{e(proposal_kind(s))}">Write the email</a> <button type="button" class="sp-btn sp-btn-2" data-copy="sp-email-text" data-copy-event="email_text_copied">Copy the text</button> <span class="sp-copied" role="status"></span></p>
   <textarea id="sp-email-text" hidden>{e(body)}</textarea>
   <p class="sp-meta">Council members as of {e(long_date(COUNCIL['checked']))}, by the districts this segment crosses. {e(pw['name'])} is the staff contact named on the speed limit update; the city lists no general Public Works email.</p>
 </section>"""
@@ -413,7 +418,7 @@ def segment_page(n):
     mapdiv = (f'<div id="sp-map" class="sp-map sp-map-small" role="img" aria-label="Map of {e(segment_label(s))}"></div>'
               if has_map else '<p class="sp-meta">This segment could not be drawn on the map.</p>')
     over = s["p85"] - s["existing"]
-    return head(title, headline(s), path, scripts=("map.js", "page.js"), og=SLUGS[n]) + f"""
+    return head(title, headline(s), path, scripts=("map.js", "page.js"), og=SLUGS[n], segment=SLUGS[n]) + f"""
 <article class="sp sp-seg">
   <span class="sp-eyebrow"><a href="{BASE}">San Mateo speed survey, 2026</a> · <a href="{BASE}#list">All {len(SEGS)} streets</a></span>
   <h1>{e(segment_label(s))}</h1>
@@ -428,14 +433,14 @@ def segment_page(n):
 {chr(10).join(items)}
   </ul>
   {note}
-  <p class="sp-meta">Surveyed {e(long_date(s['survey_date']))}. Sample size: not reported on the survey sheet. Average daily traffic {s['adt']:,} vehicles. The fastest 15% go {abs(over)} mph {"over" if over >= 0 else "under"} the limit. <a href="{e(pdf)}">Survey sheet (PDF page {s['page']})</a>.</p>
+  <p class="sp-meta">Surveyed {e(long_date(s['survey_date']))}. Sample size: not reported on the survey sheet. Average daily traffic {s['adt']:,} vehicles. The fastest 15% go {abs(over)} mph {"over" if over >= 0 else "under"} the limit. <a href="{e(pdf)}" data-track="survey_pdf_opened" data-track-pdf-page="{s['page']}">Survey sheet (PDF page {s['page']})</a>.</p>
   {mapdiv}
   {PED_RISK}
   {type_card(n)}
   {ask(n)}
   <section class="sp-box sp-share" aria-labelledby="share-h">
     <h2 id="share-h">Share this street</h2>
-    <p class="sp-actions"><input type="text" readonly value="{e(CFG['site_url'] + path)}" id="sp-url" aria-label="Link to this page"> <button type="button" class="sp-btn sp-btn-2" data-copy="sp-url">Copy link</button> <span class="sp-copied" role="status"></span></p>
+    <p class="sp-actions"><input type="text" readonly value="{e(CFG['site_url'] + path)}" id="sp-url" aria-label="Link to this page"> <button type="button" class="sp-btn sp-btn-2" data-copy="sp-url" data-copy-event="link_copied">Copy link</button> <span class="sp-copied" role="status"></span></p>
   </section>
   {small_print()}
 </article>
@@ -533,7 +538,7 @@ def methodology_page():
 
   <h2>The survey</h2>
   <ul class="sp-about">
-    <li><strong>Source.</strong> City of San Mateo Engineering and Traffic Survey summary sheets, prepared by DKS Associates and signed by a registered engineer in August 2026, obtained through a public records request: <a href="{BASE}{e(CFG['survey_pdf'])}">the full PDF (20 MB)</a>. One sheet per segment, {len(SEGS)} segments.</li>
+    <li><strong>Source.</strong> City of San Mateo Engineering and Traffic Survey summary sheets, prepared by DKS Associates and signed by a registered engineer in August 2026, obtained through a public records request: <a href="{BASE}{e(CFG['survey_pdf'])}" data-track="survey_pdf_opened" data-track-pdf-page="all">the full PDF (20 MB)</a>. One sheet per segment, {len(SEGS)} segments.</li>
     <li><strong>Dates.</strong> Speeds were measured {e(long_date(dates[0]))} to {e(long_date(dates[-1]))}. Each street's page gives its survey date.</li>
     <li><strong>What the sheets report.</strong> Posted and recommended limits, the 50th- and 85th-percentile speeds, the 10 mph pace, average daily traffic, and 2021–2025 collisions. They do not report how many vehicles were measured, so no sample sizes are shown.</li>
     <li><strong>How it was read.</strong> Most pages are scans, so the numbers were read by optical character recognition and then checked. On every sheet, the printed collision rate is reproduced from the collision count, daily traffic and segment length. The 85th-percentile speed and recommended limit match the sheet's written recommendation wherever it was legible, and the rest were checked by eye. A short list of hand corrections is in the code.</li>
