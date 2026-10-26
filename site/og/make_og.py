@@ -20,7 +20,8 @@ W, H, PAD = 1200, 630, 72
 # maxmautner.com dark tokens, and the map's validated dark-mode ordinal steps
 BG, SURFACE = "#211e1b", "#2c2925"
 TEXT, TEXT2, TEXT3, ACCENT = "#f1efe9", "#aaa39a", "#8a847b", "#c79045"
-BIN_COLORS = ["#4cae5c", "#e3c53a", "#ef8a34", "#ec4f4a"]
+BIN_COLORS = ["#7a746c", "#f2c84f", "#ea7f30", "#cf3434"]
+BIN_WIDTHS = [3, 4, 5, 6]  # heavier lines for faster streets, so the order reads without color
 
 
 def font(name, size, weight):
@@ -117,15 +118,16 @@ def index_image():
     k = min(sx, sy)
     ox = box[0] + ((box[2] - box[0]) - (max(xs) - min(xs)) * 0.79 * k) / 2
     P = lambda c: (ox + (c[0] - min(xs)) * 0.79 * k, box[1] + (max(ys) - c[1]) * k)
-    for b, c in sorted(feats, key=lambda t: t[0]):  # brightest (most over) drawn last
-        d.line([P(p) for p in c], fill=BIN_COLORS[b], width=5, joint="curve")
+    for b, c in sorted(feats, key=lambda t: t[0]):  # most over drawn last
+        d.line([P(p) for p in c], fill=BIN_COLORS[b], width=BIN_WIDTHS[b], joint="curve")
 
     # legend
     leg = font("IBMPlexSans.ttf", 22, 400)
     lx, ly = PAD, y + 50
     d.text((lx, ly - 30), "Fastest 15% over the limit:", font=leg, fill=TEXT3, anchor="ls")
     for b, label in enumerate(["at or under", "1–4", "5–7", "8+ mph"]):
-        d.rounded_rectangle([lx, ly - 14, lx + 26, ly - 6], radius=3, fill=BIN_COLORS[b])
+        h = BIN_WIDTHS[b] / 2 + 1  # same weights as the map lines
+        d.rounded_rectangle([lx, ly - 10 - h, lx + 26, ly - 10 + h], radius=h, fill=BIN_COLORS[b])
         d.text((lx + 34, ly), label, font=leg, fill=TEXT2, anchor="ls")
         lx += 34 + d.textlength(label, font=leg) + 26
     footer(d, f"maxmautner.com{B.BASE.rstrip('/')}")

@@ -8,16 +8,15 @@
   --accent: #c79045; --accent-ink: #332416; --hairline: rgba(255,255,255,.08);
   --font-serif: 'Newsreader', Georgia, serif; --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
   --gutter: 22px; --radius-sm: 9px; --radius-md: 14px;
-  --line: #e0703a;
-  /* how far the 85th is over the limit: green / yellow / orange / red, each >=3:1 on this surface */
-  --b0: #4cae5c; --b1: #e3c53a; --b2: #ef8a34; --b3: #ec4f4a;
+  /* how far the 85th is over the limit: neutral gray, then amber -> orange -> red, each step darker than the last so the
+     order survives colorblindness (dataviz validate_palette --pairs all, both modes) */
+  --b0: #7a746c; --b1: #f2c84f; --b2: #ea7f30; --b3: #cf3434;
 }
 [data-theme="light"] {
   --bg: #faf8f4; --surface: #eeeae4; --surface-sunken: #dedad3;
   --text: #1c1a17; --text-2: #56514a; --text-3: #6f6a62; --accent: #9a5f1f; --accent-ink: #fff;
   --hairline: rgba(0,0,0,.10);
-  --line: #c4501c;
-  --b0: #2e8a45; --b1: #a88508; --b2: #d4691a; --b3: #c0302b;
+  --b0: #8f8980; --b1: #dea712; --b2: #c75417; --b3: #8f1a1d;
 }
 body { background: var(--bg); }
 
@@ -86,6 +85,7 @@ header nav a { font-size: 16px; color: var(--text-2); text-decoration: none; }
 .sp-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; color: var(--text); margin: 0 0 10px; }
 .sp-legend li { display: inline-flex; align-items: center; gap: 6px; }
 .sp-swatch { display: inline-block; width: 22px; height: 6px; border-radius: 3px; }
+.sp-swatch.sp-b0 { height: 3px; } .sp-swatch.sp-b1 { height: 4px; } .sp-swatch.sp-b2 { height: 5px; } .sp-swatch.sp-b3 { height: 6px; }  /* same weights as the map lines */
 .sp-chip { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
 .sp-b0 { background: var(--b0); } .sp-b1 { background: var(--b1); } .sp-b2 { background: var(--b2); } .sp-b3 { background: var(--b3); }
 

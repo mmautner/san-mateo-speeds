@@ -44,15 +44,18 @@
     if (new URLSearchParams(location.search).has("debug")) window.__spmap = m;
     m.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
-    const lineColor = () => single ? cssColor("--line")
-      : ["match", ["get", "bin"], 0, cssColor("--b0"), 1, cssColor("--b1"), 2, cssColor("--b2"), cssColor("--b3")];
+    const lineColor = () => ["match", ["get", "bin"], 0, cssColor("--b0"), 1, cssColor("--b1"), 2, cssColor("--b2"), cssColor("--b3")];
+    // heavier lines for faster streets, so the order reads without color; the halo is 2px wider at z12, 3px at z16
+    const byBin = (w) => ["match", ["get", "bin"], 0, w[0], 1, w[1], 2, w[2], w[3]];
+    const lineWidth = (pad) => ["interpolate", ["linear"], ["zoom"],
+      12, byBin([2, 3, 4, 5].map((w) => w + pad)), 16, byBin([4, 5.5, 7, 8.5].map((w) => w + pad * 1.5))];
     const add = () => {
       m.addSource("segs", { type: "geojson", data });
-      const lay = { "line-cap": "round", "line-join": "round" };
+      const lay = { "line-cap": "round", "line-join": "round", "line-sort-key": ["get", "bin"] };  // most over on top
       m.addLayer({ id: "segs-halo", type: "line", source: "segs", layout: lay,
-        paint: { "line-color": cssColor("--bg"), "line-width": single ? 10 : ["interpolate", ["linear"], ["zoom"], 12, 5, 16, 10] } });
+        paint: { "line-color": cssColor("--bg"), "line-width": single ? 10 : lineWidth(2) } });
       m.addLayer({ id: "segs", type: "line", source: "segs", layout: lay,
-        paint: { "line-color": lineColor(), "line-width": single ? 6 : ["interpolate", ["linear"], ["zoom"], 12, 3, 16, 7] } });
+        paint: { "line-color": lineColor(), "line-width": single ? 6 : lineWidth(0) } });
       if (!single) // wide invisible line so thin segments are easy to tap
         m.addLayer({ id: "segs-hit", type: "line", source: "segs", paint: { "line-color": "#000", "line-opacity": 0, "line-width": 20 } });
     };

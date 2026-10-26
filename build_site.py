@@ -276,8 +276,12 @@ PED_RISK = (f'<p class="sp-risk">For a person walking, the average risk of death
 
 def legend():
     return ('<ul class="sp-legend" aria-label="Map colors: how far the fastest 15% go over the limit">' + "".join(
-        f'<li><span class="sp-swatch sp-b{i}" aria-hidden="true"></span>{e(label)}</li>'
-        for i, (_, label) in enumerate(BINS)) + "</ul>")
+        f'<li><span class="sp-swatch sp-b{i}" aria-hidden="true"></span>{e(label)} ({n})</li>'
+        for i, ((_, label), n) in enumerate(zip(BINS, bin_counts()))) + "</ul>")
+
+
+def bin_counts():
+    return [sum(1 for s in SEGS.values() if bin_of(s) == i) for i in range(len(BINS))]
 
 
 def geojson(ns):
@@ -472,7 +476,7 @@ def table_rows():
 def index_page():
     inc = [n for n, s in SEGS.items() if s["recommended"] > s["existing"]]
     n_all = len(SEGS)
-    counts = [sum(1 for s in SEGS.values() if bin_of(s) == i) for i in range(4)]
+    counts = bin_counts()
     p50_over = sum(1 for s in SEGS.values() if s["p50"] > s["existing"])
     title = "How fast drivers go on San Mateo's surveyed streets"
     desc = (f"Measured speeds on all {n_all} street segments in San Mateo's 2026 speed survey, the limits the city proposes, "
