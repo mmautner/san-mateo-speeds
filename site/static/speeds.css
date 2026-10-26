@@ -9,15 +9,15 @@
   --font-serif: 'Newsreader', Georgia, serif; --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
   --gutter: 22px; --radius-sm: 9px; --radius-md: 14px;
   --line: #e0703a;
-  /* how far the 85th is over the limit: one-hue ordinal ramp, validated on this surface (dataviz validate_palette --ordinal) */
-  --b0: #1c5cab; --b1: #2a78d6; --b2: #5598e7; --b3: #9ec5f4;
+  /* how far the 85th is over the limit: green / yellow / orange / red, each >=3:1 on this surface */
+  --b0: #4cae5c; --b1: #e3c53a; --b2: #ef8a34; --b3: #ec4f4a;
 }
 [data-theme="light"] {
   --bg: #faf8f4; --surface: #eeeae4; --surface-sunken: #dedad3;
   --text: #1c1a17; --text-2: #56514a; --text-3: #6f6a62; --accent: #9a5f1f; --accent-ink: #fff;
   --hairline: rgba(0,0,0,.10);
   --line: #c4501c;
-  --b0: #6da7ec; --b1: #2a78d6; --b2: #1c5cab; --b3: #0d366b;
+  --b0: #2e8a45; --b1: #a88508; --b2: #d4691a; --b3: #c0302b;
 }
 body { background: var(--bg); }
 

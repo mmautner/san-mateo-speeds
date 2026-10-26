@@ -20,7 +20,7 @@ W, H, PAD = 1200, 630, 72
 # maxmautner.com dark tokens, and the map's validated dark-mode ordinal steps
 BG, SURFACE = "#211e1b", "#2c2925"
 TEXT, TEXT2, TEXT3, ACCENT = "#f1efe9", "#aaa39a", "#8a847b", "#c79045"
-BIN_COLORS = ["#1c5cab", "#2a78d6", "#5598e7", "#9ec5f4"]
+BIN_COLORS = ["#4cae5c", "#e3c53a", "#ef8a34", "#ec4f4a"]
 
 
 def font(name, size, weight):
