@@ -273,6 +273,11 @@ PED_RISK = (f'<p class="sp-risk">For a person walking, the average risk of death
             f'about 25% if struck at 32 mph. These are impact speeds, the speed at the moment of the crash '
             f'(<a href="{e(CFG["tefft_url"])}">AAA Foundation for Traffic Safety, Tefft 2011</a>).</p>')
 
+# The maxmautner.com essay on why a few mph matter, linked under the risk figures on every page.
+READ_SLOWER = ('<p class="sp-meta sp-read">Why a few mph matter so much: '
+               '<a href="/2026/10/02/slower.html" data-track="post_clicked" data-track-post="slower">'
+               'Driving 5 mph slower beats driving 5% less</a>.</p>')
+
 
 def legend():
     return ('<ul class="sp-legend" aria-label="Map colors: how far the fastest 15% go over the limit">' + "".join(
@@ -443,6 +448,7 @@ def segment_page(n):
   <p class="sp-meta">Surveyed {e(long_date(s['survey_date']))}. Sample size: not reported on the survey sheet. Average daily traffic {s['adt']:,} vehicles. The fastest 15% go {abs(over)} mph {"over" if over >= 0 else "under"} the limit. <a href="{e(pdf)}" data-track="survey_pdf_opened" data-track-pdf-page="{s['page']}">Survey sheet (PDF page {s['page']})</a>.</p>
   {mapdiv}
   {PED_RISK}
+  {READ_SLOWER}
   {type_card(n)}
   {ask(n)}
   <section class="sp-box sp-share" aria-labelledby="share-h">
@@ -493,6 +499,7 @@ def index_page():
   <p>On larger streets, California ties the speed limit to the speed the fastest 15% of drivers exceed, called the 85th-percentile speed. The limit is that speed rounded to the nearest 5 mph, minus reductions the law allows (Vehicle Code 22358.6). Drivers going slower than that speed don't change it. When the fastest 15% speed up, the next survey can raise the limit again. A survey is valid for 7 years (Vehicle Code 40802).</p>
   <p>Since 2022, state law (AB 43) has let cities round down, keep a current limit, or cut 5 mph more on streets with crash histories or many people walking and biking. Each street's page lists the options that apply and what each requires.</p>
   {PED_RISK}
+  {READ_SLOWER}
 
   <h2>The map</h2>
   <p>Each line is a surveyed segment, colored by how far the fastest 15% go over the posted limit. On {p50_over} of the {n_all}, half of drivers go faster than the limit. Tap a line to open that street.</p>
