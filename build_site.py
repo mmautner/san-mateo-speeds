@@ -193,6 +193,7 @@ HEADER = """<header role="banner">
   <a href="/" class="site-title">Max Mautner</a>
   <nav role="navigation"><ul>
     <li><a href="/writing/">Essays</a></li>
+    <li><a href="/tools/" class="active">Tools</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/subscribe/" class="nav-button">Subscribe</a></li>
     <li><button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
@@ -266,6 +267,7 @@ def small_print():
   <p>Speeds and limits: City of San Mateo 2026 Engineering and Traffic Survey (DKS Associates), obtained through a public records request. <a href="{BASE}methodology/">How this was made</a>.</p>
   <p>Made by <a href="/about/">Max Mautner</a>. <a href="{e(CFG['repo_url'])}">The data and code are public</a>, including the <a href="{e(MEMO)}">legal memo</a>, so anyone can check how each number was reached. <a href="{e(issue)}">Report an error</a>.</p>
   <p>Updated {e(long_date(CFG['updated']))}. A reading of state law, not legal advice.</p>
+  <p><a href="/tools/">More tools for San Mateo's streets</a></p>
 </footer>"""
 
 
